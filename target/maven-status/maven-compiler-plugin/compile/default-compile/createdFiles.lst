@@ -1,1 +1,3 @@
 com\bdv\microservicios\Msvcchequesliberados\MsvcChequesliberadosApplication.class
+com\bdv\microservicios\Msvcchequesliberados\model\entity\Cheque.class
+com\bdv\microservicios\Msvcchequesliberados\model\entity\ChequeId.class

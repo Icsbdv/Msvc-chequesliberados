@@ -51,9 +51,13 @@ public class ChequeController {
         if(chequeId!=null){
             Optional<Cheque> optionalCheque=chequeService.consultarChequePorId(chequeId);
             if (optionalCheque.isPresent()){
-                chequeactualizado=chequeService.actualizarestatuscheque(chequeId,nuevoestatus);
-                if(chequeactualizado.isPresent()) {
-                    return new ResponseEntity<>(new ChequeToChequedtoMapper().apply(chequeactualizado.get()), HttpStatus.OK);
+                if(optionalCheque.get().getChequeId().getBanco().equals("0102")) {
+                    chequeactualizado = chequeService.actualizarestatuscheque(chequeId, nuevoestatus);
+                    if (chequeactualizado.isPresent()) {
+                        return new ResponseEntity<>(new ChequeToChequedtoMapper().apply(chequeactualizado.get()), HttpStatus.OK);
+                    } else {
+                        return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+                    }
                 }else{
                     return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
                 }

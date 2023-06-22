@@ -11,3 +11,10 @@ Qsrc/main/java/com/bdv/microservicios/msvchequesliberados/model/dto/Chequedto.ja
 Ysrc/main/java/com/bdv/microservicios/msvchequesliberados/model/repository/ChequeRepo.java,7\f\7f348274982aa33cb52c5e20b924b693fbe6aaa4
 ç
 ]src/main/java/com/bdv/microservicios/msvchequesliberados/services/impl/ChequeServiceImpl.java,f\6\f659af9f63f9ca83168637eb15321d51c334898c
+Å
+Qsrc/main/java/com/bdv/microservicios/msvchequesliberados/model/entity/Cheque.java,9\9\99f6c746c42b9b9abcfccf44508678201c9af540
+ä
+Zsrc/main/java/com/bdv/microservicios/msvchequesliberados/controllers/ChequeController.java,3\2\325e73c71a1d9c72b01ec6b17cf467cf588d227f
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

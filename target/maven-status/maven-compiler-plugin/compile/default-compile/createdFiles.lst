@@ -1,1 +1,9 @@
-com\bdv\microservicios\Msvcchequesliberados\MsvcChequesliberadosApplication.class
+com\bdv\microservicios\msvchequesliberados\model\dto\Chequedto.class
+com\bdv\microservicios\msvchequesliberados\model\repository\ChequeRepo.class
+com\bdv\microservicios\msvchequesliberados\model\mappers\ChequeToChequedtoMapper.class
+com\bdv\microservicios\msvchequesliberados\services\impl\ChequeServiceImpl.class
+com\bdv\microservicios\msvchequesliberados\controllers\ChequeController.class
+com\bdv\microservicios\msvchequesliberados\MsvcChequesliberadosApplication.class
+com\bdv\microservicios\msvchequesliberados\model\entity\ChequeId.class
+com\bdv\microservicios\msvchequesliberados\services\ChequeService.class
+com\bdv\microservicios\msvchequesliberados\model\entity\Cheque.class

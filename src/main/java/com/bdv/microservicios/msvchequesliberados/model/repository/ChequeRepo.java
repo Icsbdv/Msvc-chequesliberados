@@ -10,10 +10,10 @@ import java.util.List;
 
 
 public interface ChequeRepo extends JpaRepository<Cheque, ChequeId> {
-    @Query(value="SELECT u FROM TBLCHEQUES u WHERE u.estatus=?1 and u.agencia=?2")
+    @Query(value="SELECT u FROM TBLCHEQUES u WHERE u.estatus=?1 and u.agencia=?2 and u.chequeId.banco='0102'")
     List<Cheque> findByEstatusAndAgencia(String estatus, String agencia);
 
-    @Query(value="SELECT u FROM TBLCHEQUES u WHERE u.agencia=?1")
+    @Query(value="SELECT u FROM TBLCHEQUES u WHERE u.agencia=?1 and u.chequeId.banco='0102'")
     List<Cheque> findByAgencia(String agencia);
 
 }
